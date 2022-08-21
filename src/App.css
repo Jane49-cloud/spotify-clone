@@ -1,38 +1,234 @@
-.App {
-  text-align: center;
+.App{
+    margin-top: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex; 
+    position: relative;
+    width: 100%;
+   
+    
+
+}
+.background{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right: 0; 
+     left: 0;
+     background-image: url('images/flower.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+  filter: grayscale(100);
+  z-index: -1;
+
+
+}
+/*global styles */
+/* left-menu styles */
+.left-menu{
+    background-color: rgba(34, 34, 34, 0.6);
+    width: 250px;
+    height: 100%;
+    min-height: 100vh;
+    backdrop-filter: blur(10px);
+    padding:25px, 30px;
+    overflow:hidden;
+    transform:all 0.3s ease ;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    font-size: 20px;
+}
+ span{
+    margin-left: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 500;
+ }
+ .more-btn{
+    background-color: rgba(34, 34, 34, 0.6);
+    border: none;
+    backdrop-filter: blur(10px);
+    color:#FFFF;
+    font-size:30px
+ }
+
+ input{
+    margin: 10px;
+    background-color:#000000;
+    color: #FFFF;
+    height: 100%;
+    border: none;
+    width:200px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    outline: none;
+    padding: 10px;
+    position: relative;
+
+ }
+.search{
+    position: absolute;
+    left:15px;
+    margin-top:20px;    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-icon{
+    display: flex;
+    margin: 10px;
+    height: 30px;
+    width:200px;
+    background-color: #222;
+    /* margin-top:25px; */
+    align-items: center;
+    font-size: 20px;
+    border-radius: 0.85rem;
+    border: none;    
+    }
+    
+.btn-icon a{
+    text-decoration: none;
+    color:  #40e12e;
+}
+.btn-icon span{
+    color: white
+}
+/* 
+.links button ::before {
+    position: absolute;
+    content:'';
+    left:7px;
+    top: 0;
+    width: 0px;
+    height: 312px;
+    background-color: #385f34;
+    margin-top: 120px;
+    
+}
+.links button :hover::after{
+
+        background-color:black;
+        width: 30px;
+    } */
+
+ .playlistContainer{
+cursor: pointer;
+margin: 10px;
+    }
+.name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #848484;
+    margin-bottom: 10px;
+}
+.name-container p{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.name-container i{
+cursor: pointer;
+color: #ffffff;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#playlist{
+   display: flex;
+   /* justify-content: space-around; */
+    align-items: center;
+    height:140px ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    bottom: 20px;
+    margin-left: 10px;
+    justify-content: space-between;
+    color: #848484;
+    margin: 2px;
+    height:40px;
+    ;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#playlist :hover{
+    color: #f1f1f1; 
+    transition: 0.6s;
+    background-color:  #848484;
+}
+#playlist p{
+ font-size: 16px;
+ display: inline;
+ overflow: hidden;  
+ text-overflow: ellipsis;  
+ margin-right: 30px; 
 }
 
-.App-link {
-  color: #61dafb;
+.tracklist{
+    border-top: solid 2px rgba(255,255,255,0.3);
+    padding-top: 20px;
+}
+.tracklist .top{
+    display: flex;
+    align-items: center;
+
+}
+.tracklist img{
+width: 50px !important;
+}
+.tracklist p{
+    margin-left:10px ;
+    color: #ffffff;
+    font-size: 15px;
+}
+.tracklist span{
+    display: block;
+    font-size: 12px;
+    color:#848484
+}
+.tracklist .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #848484;
+}
+.tracklist .bottom i{
+ font-size: 18px;   
+}
+.tracklist .bottom i :hover{
+    color: #f1f1f1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.tracklist .bottom input{
+    position: relative;
+    height:2px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color:#848484;
+    appearance: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* main-menu styles */
+.main-menu{
+    background-color: blue;
+    width: 50vw;
+    height: 100vh;
+}
+/* Right-menu styles */
+
+.right-menu{
+    background-color: orangered;
+    width: 25vw;
+    height: 100vh;
 }
