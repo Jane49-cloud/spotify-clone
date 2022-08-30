@@ -10,12 +10,12 @@
   transition: all, 0, 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.barner {
+.banner {
   height: 300px;
   background-color: yellow;
   position: relative;
 }
-.barner .barner-img {
+.banner .banner-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +25,7 @@
   filter: grayscale(100);
   height: 100%;
 }
-.barner .content {
+.banner .content {
   position: absolute;
   top: 0;
   right: 0;
@@ -36,41 +36,41 @@
   font-display: column;
   z-index: 3;
 }
-.barner .content .breadcrum {
+.banner .content .breadcrum {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.barner .content .breadcrum p {
+.banner .content .breadcrum p {
   color: yellow;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
 }
-.barner .content .breadcrum p span {
+.banner .content .breadcrum p span {
   color: #f1f1f1;
 }
-.barner .content .breadcrum .artist-section {
+.banner .content .breadcrum .artist-section {
   margin-top: auto;
   color: #f1f1f1;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.barner .content .breadcrum .artist-section .left .name {
+.banner .content .breadcrum .artist-section .left .name {
   display: flex;
   align-items: center;
 }
-.barner .content .breadcrum .artist-section .left .name h3 {
+.banner .content .breadcrum .artist-section .left .name h3 {
   font-size: 50px;
 }
-.barner .content .breadcrum .artist-section .left .name i {
+.banner .content .breadcrum .artist-section .left .name i {
   color: green;
   font-size: 40px;
   background-color: rgb(41, 176, 230);
   border-radius: 50%;
 }
-.barner .bottom-layer {
+.banner .bottom-layer {
   position: absolute;
   right: 0;
   left: 0;

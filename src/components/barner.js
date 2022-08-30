@@ -3,10 +3,10 @@ import check from "../images/check1.jpg";
 import artist from "../images/musician2.jpg";
 import { FaCheck, FaHeadphones, FaEllipsisH } from "react-icons/fa";
 
-const Barner = (props) => {
+const Banner = (props) => {
   return (
-    <div className="barner">
-      <img src={artist} alt={artist} className="barner-img" />
+    <div className="banner">
+      <img src={artist} alt={artist} className="banner-img" />
       <div className="content">
         <div className="breadcrum">
           <p>
@@ -43,4 +43,4 @@ const Barner = (props) => {
   );
 };
 
-export default Barner;
+export default Banner;
