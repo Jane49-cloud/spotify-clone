@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 .App{
     margin-top: 0;
     height: 100vh;
@@ -5,9 +8,6 @@
     display: flex; 
     position: relative;
     width: 100%;
-   
-    
-
 }
 .background{
     position: absolute;
@@ -96,7 +96,7 @@
     
 .btn-icon a{
     text-decoration: none;
-    color:  #40e12e;
+    color:  #848484;
 }
 .btn-icon span{
     color: white
@@ -202,7 +202,8 @@ width: 50px !important;
     color: #848484;
 }
 .tracklist .bottom i{
- font-size: 18px;   
+ font-size: 18px; 
+ margin-right:5px  
 }
 .tracklist .bottom i :hover{
     color: #f1f1f1;
@@ -211,24 +212,68 @@ width: 50px !important;
 }
 .tracklist .bottom input{
     position: relative;
-    height:2px;
+    height:5px;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius:0.3rem;
     background-color:#848484;
     appearance: none;
+    -webkit-appearance: none;
+  
 }
 
-/* main-menu styles */
-.main-menu{
-    background-color: blue;
-    width: 50vw;
-    height: 100vh;
-}
-/* Right-menu styles */
 
-.right-menu{
-    background-color: orangered;
-    width: 25vw;
-    height: 100vh;
+.tracklist .bottom input::before{
+    position:absolute;
+    content : "";
+    top:0px;
+    left:0;
+    background-color:green;
+    width:50%;
+    height:100%;
+    border-radius:10px;
+    z-index:2;
+    transition: width 250ms linear;
+
+}
+.tracklist .bottom input::webkit-slider-thumb{
+    appearance:none;
+    width:10px;
+    height:15px;
+    border-radius: 10px;
+    background-color:#f1f1f1;
+    cursor :pointer; 
+    border:solid 2px black;
+    position:relative;
+    margin:-2px 0 0 0 ;
+    z-index:3 ;
+    box-sizing: border-box;
+    transition: all 250ms linear;
+}
+
+@media screen and (max-width: 550px) {
+    .left-menu {
+      width: 62px;
+      min-width: 62px;
+    }
+    .left-menu #search {
+      display: none;
+    }
+  
+  .tracklist, .playlistContainer {
+    display: none;
+  }
+  .btn-icon{
+    margin-top: 30px;
+    background-color: transparent;
+    border-radius: 0px;  
+  }
+  span, .more-btn, .search{
+    display: none;
+  }
+  .icons{
+    margin: 10px;
+    margin-right: 5px;
+  }
+
 }

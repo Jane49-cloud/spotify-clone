@@ -1,0 +1,93 @@
+.main-menu {
+  height: 100vh;
+  width: 100px;
+  background-color: yellow;
+  flex-grow: 1;
+  z-index: 1;
+  background-color: rgba(34, 34, 34, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: all, 0, 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.barner {
+  height: 300px;
+  background-color: yellow;
+  position: relative;
+}
+.barner .barner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100);
+  height: 100%;
+}
+.barner .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  padding: 20px, 30px;
+  font-display: column;
+  z-index: 3;
+}
+.barner .content .breadcrum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.barner .content .breadcrum p {
+  color: yellow;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.barner .content .breadcrum p span {
+  color: #f1f1f1;
+}
+.barner .content .breadcrum .artist-section {
+  margin-top: auto;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.barner .content .breadcrum .artist-section .left .name {
+  display: flex;
+  align-items: center;
+}
+.barner .content .breadcrum .artist-section .left .name h3 {
+  font-size: 50px;
+}
+.barner .content .breadcrum .artist-section .left .name i {
+  color: green;
+  font-size: 40px;
+  background-color: rgb(41, 176, 230);
+  border-radius: 50%;
+}
+.barner .bottom-layer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+}
+
+.right-menu {
+  height: 100vh;
+  background-color: rgba(34, 34, 34, 0.6);
+  width: 100px;
+  min-width: 100px;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-left: 2px solid rgba(225, 225, 225, 0.1);
+  transition: all, 0, 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-
+import './style.css'
 import './App.css';
 import { LeftMenu } from './components/left-menu';
 import { MainMenu } from './components/main-menu';
@@ -8,9 +8,11 @@ function App() {
   return (
    
    <> 
+   <div className="App">
    <LeftMenu></LeftMenu>
    <MainMenu/>
    <RightMenu/>
+   </div>
 
    <div className='background'>
 
