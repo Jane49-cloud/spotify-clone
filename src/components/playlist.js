@@ -15,9 +15,13 @@ export const Playlist = (props) => {
     playList.map((item)=>{
 const{name, id} = item
 return <div id='playlist' key={id}>
+<div>
 <i><FaList className='list'/></i>
-<p>{name}</p>
+</div>
+<span></span><p>{name}</p>
+<div>
 <i><FaTrash className='Trash'/></i>
+</div>
 </div>
     })
 }

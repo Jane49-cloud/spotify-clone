@@ -14,6 +14,7 @@
   height: 300px;
   background-color: yellow;
   position: relative;
+  display: flex;
 }
 .banner .banner-img {
   position: absolute;
@@ -31,18 +32,12 @@
   right: 0;
   left: 0;
   bottom: 0;
-  display: flex;
   padding: 20px, 30px;
   font-display: column;
   z-index: 3;
 }
-.banner .content .breadcrum {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .banner .content .breadcrum p {
-  color: yellow;
+  color: white;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -51,15 +46,11 @@
   color: #f1f1f1;
 }
 .banner .content .breadcrum .artist-section {
-  margin-top: auto;
   color: #f1f1f1;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .banner .content .breadcrum .artist-section .left .name {
   display: flex;
-  align-items: center;
 }
 .banner .content .breadcrum .artist-section .left .name h3 {
   font-size: 50px;
@@ -69,6 +60,10 @@
   font-size: 40px;
   background-color: rgb(41, 176, 230);
   border-radius: 50%;
+}
+.banner .content .breadcrum .artist-section .right a {
+  text-decoration: none;
+  color: #f1f1f1;
 }
 .banner .bottom-layer {
   position: absolute;
